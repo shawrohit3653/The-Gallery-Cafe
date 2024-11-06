@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Main container with sidebar and content */
+        #container {
+            display: flex;
+            height: 100vh;
+            border: 1px solid black;
+        }
+
+        /* Sidebar styling */
+        #sidebar {
+            width: 300px;
+            border-right: 1px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        /* Main content area styling */
+        #main-content {
+            flex: 2;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+
+        /* Styling for project sections in the sidebar */
+        .project {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <!-- Sidebar with projects -->
+    <div id="sidebar">
+        <div class="project" id="1">
+            <h3>Project 1 - Resume</h3>
+            <iframe src="/ResumeProject/index.html" width="100%" height="150"></iframe>
+        </div>
+        <div class="project" id="2">
+            <h3>Project 2 - Photo Cat App</h3>
+            <iframe src="/CatProject/index.html" width="100%" height="150"></iframe>
+        </div>
+        <div class="project" id="3">
+            <h3>Project 3 - Form</h3>
+            <iframe src="/personal.html" width="100%" height="150"></iframe>
+        </div>
+        <div class="project" id="4">
+            <h3>Project 4 - Tribute Page</h3>
+            <iframe src="/tribute.html" width="100%" height="150"></iframe>
+        </div>
+    </div>
+
+    <!-- Main content area for detailed information -->
+    <div id="main-content">
+        <iframe src="/ResumeProject/index.html" style="width: 1150px; height: 1500px;" id="1"></iframe>
+    </div>
+</div>
+</body>
+</html>
