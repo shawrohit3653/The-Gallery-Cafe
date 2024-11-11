@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Example</title>
+    <style>
+        /* Basic style for boxes */
+        .boxOuter {
+            border: 2px solid red;
+            padding: 10px;
+            margin: 10px;
+        }
+        .box {
+            border: 2px solid red;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* Title box */
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        /* List and button styles */
+        .list-box {
+            margin-top: 20px;
+        }
+
+        .list-item {
+            border: 2px solid red;
+            padding: 5px;
+        }
+
+        .buttons-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            align-items: center;
+        }
+
+        .button, .link {
+            border: 2px solid red;
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+
+        .link {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxOuter">
+    <div class="box title">
+        I'm a box
+    </div>
+    <div class="box">
+        I'm also a box with some text in it.. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod molestiae cumque dolores provident!
+        Quo repellat odio rerum, ipsa maiores adipisci veritatis beatae, non ipsam minus dignissimos amet cupiditate nesciunt quas?
+    </div>
+    <div class="box list-box">
+        <div class="list-item">this list is a box</div>
+        <div class="list-item">and all the list items in it are boxes</div>
+    </div>
+    <div class="buttons-container">
+        <span>even</span>
+        <button class="button">buttons</button>
+        <span>and</span>
+        <a href="#" class="link">links</a>
+        <span>are boxes.</span>
+    </div>
+</div>
+</body>
+</html>
