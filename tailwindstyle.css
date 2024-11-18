@@ -1,0 +1,164 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Product Container */
+.product-container {
+    background-color: white;
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    position: relative;
+}
+
+/* Image Section */
+.image-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shoe-image {
+    width: 60%;
+    border: 4px solid teal;
+    border-radius: 10px;
+}
+
+/* Details Section */
+.details-section {
+    margin-left: 50%;
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.title {
+    margin-top:40px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color:white;
+}
+
+.price {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: white;
+}
+
+.stock-status {
+    color: teal;
+    font-weight: bold;
+}
+
+/* Sizes */
+.sizes {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.size-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid gray;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.size-btn.selected {
+    background-color: black;
+    color: white;
+    border: 2px solid teal;
+}
+
+.size-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Actions */
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.action-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-now {
+    background-color: teal;
+    color: white;
+}
+
+.buy-now:hover {
+    background-color: darkcyan;
+}
+
+.add-to-bag {
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+}
+
+.add-to-bag:hover {
+    background-color: #f0f0f0;
+}
+
+.wishlist {
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 5px 10px;
+}
+
+.wishlist:hover {
+    background-color: #f0f0f0;
+}
+
+/* Shipping Info */
+.shipping-info {
+    margin-top: 20px;
+    font-size: 0.85rem;
+    color: gray;
+}
+.black{
+    width: 10000px;
+    height: 150px;
+    background-color: black;
+}
